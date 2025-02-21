@@ -21,7 +21,7 @@ template HitShip (n) {
     boardID === boardToHash.hash;
 
     // 2. did verifier hit a ship
-    signal hit <-- board[attack_i][attack_j];
+    signal hit <== board[attack_i][attack_j];
     hitShip <== hit;
 }
 
